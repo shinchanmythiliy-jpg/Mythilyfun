@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mythily Y - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mythily Y</h1>
+    <p>Department of Computer Application</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am <b>Mythily Y</b> from the Department of Computer Application. 
+      I have completed my schooling in <b>Govt Hr Sec School, Kasinayakkanpatti, Tirupattur</b>. 
+    </p>
+    <button class="btn" onclick="showMessage()">Say Hello</button>
+  </section>
+
+  <section id="hobbies">
+    <h2>My Hobbies</h2>
+    <div class="hobbies">
+      <div class="hobby-card">
+        <span>🎤</span>
+        <h3>Singing</h3>
+      </div>
+      <div class="hobby-card">
+        <span>💃</span>
+        <h3>Dancing</h3>
+      </div>
+      <div class="hobby-card">
+        <span>🗣️</span>
+        <h3>Speaking</h3>
+      </div>
+      <div class="hobby-card">
+        <span>✍️</span>
+        <h3>Writing</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="sendMessage(event)">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mythily Y | Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
